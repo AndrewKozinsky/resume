@@ -1,0 +1,82 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-ExtraBold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+/* / Подключение шрифтов */
+
+
+
+
+:root{
+    font-size: 10px;
+}
+
+
+/* Для телефонов базовый размер шрифта будет больше.*/
+@media (max-device-width: 600px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+
+/* Общие настройки страницы */
+body {
+    display: flex;
+    min-height: 100vh;
+
+    font-family: 'TT Norms', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+/* Стиль ссылок */
+a {
+    color: rgb(0, 74, 219);
+    text-decoration: none;
+
+    background-image: linear-gradient(transparent 60%, rgba(0, 84, 185, .3) 40%);
+    background-repeat: repeat-x;
+    padding-bottom: 0.1rem;
+}
+
+
+#root {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Выделение текста */
+::selection {
+    background-color: red;
+}
