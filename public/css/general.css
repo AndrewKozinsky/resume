@@ -59,11 +59,24 @@ body {
 /* Стиль ссылок */
 a {
     color: rgb(0, 74, 219);
+    border-bottom: 1px solid rgba(0, 74, 219, .2);
+    transition: border-bottom-color .25s;
     text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 74, 219);
+    border-bottom: 1px solid rgba(0, 60, 192, .3);
+    transition: border-bottom-color .1s;
+}
 
-    background-image: linear-gradient(transparent 60%, rgba(0, 84, 185, .3) 40%);
-    background-repeat: repeat-x;
-    padding-bottom: 0.1rem;
+/* Стиль чёрной ссылки */
+.black-link {
+    color: rgb(30, 30, 30);
+    border-bottom-color: rgba(30, 30, 30, .2);
+}
+.black-link:hover {
+    color: rgb(0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, .3);
 }
 
 
