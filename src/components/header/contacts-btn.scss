@@ -1,0 +1,100 @@
+// Кнопка со списком контактов
+.contacts-btn {
+    position: relative;
+
+    &:hover .contacts-btn__list{
+        display: grid;
+    }
+}
+
+.contacts-btn__btn {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--black-link-color);
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg width="16px" height="12px" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="rgb(30, 30, 30)"><rect x="0" y="0" width="16" height="2"></rect><rect x="0" y="5" width="16" height="2"></rect><rect x="0" y="10" width="8" height="2"></rect></g></svg>');
+    background-repeat: no-repeat;
+    background-position: 15px 8px;
+
+    padding: 4px 15px 4px 37px;
+    border: 1px solid var(--black-link-border-color);
+    border-radius: var(--radius);
+
+    &:hover {
+        color: var(--black-link-color-hover);
+        border-color: var(--black-link-border-color-hover);
+    }
+}
+
+.contacts-btn__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+@media (min-width: 500px) {
+    .contacts-btn__list {
+        left: auto;
+        right: 0;
+    }
+}
+
+.contacts-btn__link {
+    display: inline-block;
+    padding: 5px 15px;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: rgb(231, 238, 247);
+    }
+
+    &:nth-child(2n) {
+        margin-bottom: 10px;
+    }
+    &:first-child {
+        padding-top: 13px;
+    }
+    &:last-child {
+        padding-bottom: 12px;
+        margin-bottom: 0;
+    }
+
+}
+
+.contacts-btn__text {
+    position: relative;
+    margin-left: 27px;
+}
+
+.contacts-btn__text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -27px;
+
+    width: 22px;
+    height: 20px;
+}
+.contacts-btn__text__mail:before {
+    background-image: url("../footer-adress/icons/mail.svg");
+}
+.contacts-btn__text__skype:before {
+    background-image: url("../footer-adress/icons/skype.svg");
+}
+.contacts-btn__text__hh:before {
+    background-image: url("../footer-adress/icons/hh.svg");
+}
+.contacts-btn__text__phone:before {
+    background-image: url("../footer-adress/icons/phone.svg");
+}
+.contacts-btn__text__telegram:before {
+    background-image: url("../footer-adress/icons/telegram.svg");
+}
+.contacts-btn__text__github:before {
+    background-image: url("../footer-adress/icons/github.svg");
+}

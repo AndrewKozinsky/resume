@@ -50,33 +50,49 @@ body {
     min-height: 100vh;
 
     font-family: 'TT Norms', Helvetica, sans-serif;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    font-weight: 300;
     color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: rgb(231, 238, 247);
 }
 
 /* Стиль ссылок */
 a {
-    color: rgb(0, 74, 219);
-    border-bottom: 1px solid rgba(0, 74, 219, .2);
+    color: var(--link-color);
+    font-weight: 500;
+    border-bottom: 1px solid var(--link-border-color);
     transition: border-bottom-color .25s;
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover {
-    color: rgb(0, 74, 219);
-    border-bottom: 1px solid rgba(0, 60, 192, .3);
+    color: var(--link-color-hover);
+    border-bottom: 1px solid var(--link-border-color-hover);
     transition: border-bottom-color .1s;
 }
 
 /* Стиль чёрной ссылки */
 .black-link {
-    color: rgb(30, 30, 30);
-    border-bottom-color: rgba(30, 30, 30, .2);
+    color: var(--black-link-color);
+    border-bottom-color: var(--black-link-border-color);
 }
 .black-link:hover {
-    color: rgb(0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, .3);
+    color: var(--black-link-color-hover);
+    border-bottom-color: var(--black-link-border-color-hover);
+}
+
+/* Cсылка без выделяющих элементов */
+.simplified-link, .simplified-link:hover {
+    color: var(--text-color);
+    border: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -90,6 +106,7 @@ a:hover {
 
 
 /* Выделение текста */
+/*
 ::selection {
     background-color: red;
-}
+}*/

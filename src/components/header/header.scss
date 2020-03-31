@@ -1,0 +1,113 @@
+// Сетка шапки
+.header {
+    display: grid;
+}
+
+.header__part-1 {
+    grid-area: part-1;
+    //background-color: aqua;
+}
+.header__part-2 {
+    grid-area: part-2;
+    //background-color: aquamarine;
+}
+.header__part-3 {
+    grid-area: part-3;
+    //background-color: mediumaquamarine;
+}
+
+.main-header {
+    font-weight: 900;
+}
+
+.main-nav {
+    & > * {
+        display: inline-block;
+    }
+
+    & > *:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .header {
+        display: grid;
+        grid-template-areas:
+                "part-1"
+                "part-2"
+                "part-3";
+    }
+
+    .header__part-1 {
+        padding-bottom: 1rem;
+    }
+
+    .header__part-2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .main-header {
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
+
+
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    .header {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+                "part-1 part-1"
+                "part-2 part-3";
+    }
+
+    .header__part-1 {
+        padding-bottom: 1.2rem;
+    }
+
+    .header__part-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header {
+        font-size: 4.4rem;
+        line-height: 4.8rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .header {
+        display: flex;
+    }
+    .header__part-1 {
+        flex-basis: 0;
+    }
+    .header__part-2 {
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-header {
+        font-size: 4.4rem;
+        line-height: 4.8rem;
+    }
+
+    .main-nav {
+        padding-top: 4px;
+
+        & > *:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .header__part-1 {
+        flex-basis: auto;
+    }
+}
