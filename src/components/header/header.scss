@@ -5,15 +5,12 @@
 
 .header__part-1 {
     grid-area: part-1;
-    //background-color: aqua;
 }
 .header__part-2 {
     grid-area: part-2;
-    //background-color: aquamarine;
 }
 .header__part-3 {
     grid-area: part-3;
-    //background-color: mediumaquamarine;
 }
 
 .main-header {
@@ -51,8 +48,6 @@
         font-size: 3.4rem;
         line-height: 3.8rem;
     }
-
-
 }
 
 @media (min-width: 500px) and (max-width: 799px) {

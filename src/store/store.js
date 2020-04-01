@@ -1,4 +1,6 @@
-export default {
+import {createStore} from 'redux'
+
+const INICIAL_STATE = {
     lang: 'ru',
     adresses: [
         {
@@ -32,4 +34,27 @@ export default {
             href: 'https://github.com'
         }
     ]
+};
+
+function reducer(state = INICIAL_STATE, action) {
+
+    switch (action.type) {
+        case 'SWITCH_LANG':
+            return switchLang(state);
+        default:
+            return state
+    }
+}
+
+const store = createStore(reducer);
+export default store;
+
+
+
+// Переключение языка интерфейса
+function switchLang(state) {
+    const stateCopy = {...state};
+    stateCopy.lang = (state.lang === 'ru') ? 'eng' : 'ru';
+
+    return stateCopy;
 }

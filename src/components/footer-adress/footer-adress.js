@@ -1,13 +1,12 @@
-import React, {useReducer} from 'react';
-import reducer from "../../store/reducer";
-import inicialState from '../../store/inicial-state';
+import React from 'react';
+import {useSelector, shallowEqual} from "react-redux";
 import './footer-adress.scss'
 
 function FooterAdress () {
 
-    const [state] = useReducer(reducer, inicialState);
+    const adresses = useSelector(state => state.adresses, shallowEqual);
 
-    const cellsMarkup = state.adresses.map((cellData, i) => {
+    const cellsMarkup = adresses.map((cellData, i) => {
         return (
             <div className="footer-address__cell" key={i}>
                 <a
