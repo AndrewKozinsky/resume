@@ -5,7 +5,6 @@ import './contacts-btn.scss'
 
 
 function Header() {
-
     const lang = useSelector(state => state.lang);
 
     const name = (lang === 'ru') ? 'Андрей Козинский' : 'Andrew Kozinsky';
@@ -32,7 +31,6 @@ function Header() {
 
 
 function ContactsBtn() {
-
     const adresses = useSelector(store => store.adresses, shallowEqual);
     const lang = useSelector(store => store.lang, shallowEqual);
 

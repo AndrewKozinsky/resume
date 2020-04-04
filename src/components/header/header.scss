@@ -1,6 +1,9 @@
 // Сетка шапки
 .header {
+    position: relative;
     display: grid;
+    z-index: 1;
+    padding-bottom: 2rem;
 }
 
 .header__part-1 {
@@ -56,6 +59,8 @@
         grid-template-areas:
                 "part-1 part-1"
                 "part-2 part-3";
+
+        padding-bottom: 2.5rem;
     }
 
     .header__part-1 {
@@ -76,6 +81,7 @@
 @media (min-width: 800px) {
     .header {
         display: flex;
+        padding-bottom: 3rem;
     }
     .header__part-1 {
         flex-basis: 0;
@@ -102,6 +108,9 @@
 }
 
 @media (min-width: 1100px) {
+    .header {
+        padding-bottom: 4rem;
+    }
     .header__part-1 {
         flex-basis: auto;
     }
