@@ -2,6 +2,7 @@ import React from 'react';
 import LangSwitcher from '../lang-switcher';
 import Header from '../header';
 import About from '../about';
+import DevInfoGrid from '../dev-info-grid';
 import FooterAdress from '../footer-adress';
 
 import { Provider } from 'react-redux';
@@ -17,10 +18,12 @@ function App() {
                 <LangSwitcher />
                 <Header />
                 <About />
+                <DevInfoGrid />
             </div>
             <footer id="page-bottom-part">
                 <FooterAdress />
             </footer>
+
         </Provider>
     );
 }

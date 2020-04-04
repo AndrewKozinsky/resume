@@ -107,8 +107,13 @@ button {
 }
 
 
-/* Выделение текста */
-/*
-::selection {
-    background-color: red;
-}*/
+/* Заголовки */
+.header__2 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+}
+

@@ -10,7 +10,7 @@ const INICIAL_STATE = {
         },
         {
             prefix: 'phone',
-            text: '8 919 84-25-599',
+            text: '8 919 84-23-599',
             href: 'tel:+79198425599'
         },
         {

@@ -1,0 +1,59 @@
+.tool:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.tool__name {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.tool__sign {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: -4px;
+}
+
+.tool__subtools {
+
+}
+.tool__subtool {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    background-color: white;
+
+    padding: 6px 12px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.4rem;
+}
+
+.tool__details {
+
+}
+.tool__detail {
+    margin-right: 2rem;
+}
+.tool__details-backlight {
+    font-weight: 500;
+}
+
+@media (min-width: 500px) {
+    .tool__name {
+        font-size: 5rem;
+        line-height: 5.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .tool__subtools {
+        margin-bottom: .4rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .tool:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+}

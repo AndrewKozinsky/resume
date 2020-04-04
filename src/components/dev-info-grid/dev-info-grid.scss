@@ -1,0 +1,37 @@
+.dev-info-grid {
+    position: relative;
+
+    display: grid;
+    grid-template-areas:
+            "tools"
+            "works"
+            "github";
+}
+
+.dev-info-grid__tools {
+    grid-area: tools;
+}
+.dev-info-grid__works {
+    grid-area: works;
+}
+.dev-info-grid__github {
+    grid-area: github;
+}
+
+@media (min-width: 1000px) {
+    .dev-info-grid {
+        grid-column-gap: 2rem;
+        grid-template-areas:
+                "tools works"
+                "tools github";
+        grid-auto-columns: 60% 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .dev-info-grid {
+        grid-template-areas:
+                "tools works github";
+        grid-auto-columns: 50% 25% 25%;
+    }
+}
