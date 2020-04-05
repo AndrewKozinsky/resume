@@ -13,30 +13,19 @@ function About() {
     return (
         <article className="about">
             <div className="about__photo-w">
-                <img className="about__photo" srcSet={`${myPhotoJpeg} 1x, ${myPhoto2Jpeg} 2x`} />
+                <img className="about__photo" srcSet={`${myPhotoJpeg} 1x, ${myPhoto2Jpeg} 2x`} alt="Фотография Андрея Козинского" />
             </div>
 
             <header className="about__intro-w">
                 { getIntroText(lang).map((paragraph, i) => <p className="about__intro-text" key={i}>{paragraph}</p>) }
-                {/*<p className="about__intro-text">Я&nbsp;верстальщик сайтов и&nbsp;пользовательских интерфейсов.</p>
-                <p className="about__intro-text">Мой подход&nbsp;&mdash; разобраться в&nbsp;задаче, заранее увидеть подводные камни и&nbsp;сделать всё в&nbsp;срок без напоминаний.</p>
-                <p className="about__intro-text">Буду рад стать частью команды создающей технологичные веб-системы.</p>*/}
             </header>
 
             <section className="about__text-w">
                 <div>
                     { getFirstText(lang).map((paragraph, i) => <p className="about__text" key={i}>{paragraph}</p>) }
-                    {/*<p className="about__text">Я стремлюсь не только перевести макет в код, но, что важнее, продумать как это должно работать;</p>
-                    <p className="about__text">Я рассматриваю интерфейс как систему взаимосвязанных компонентов;</p>
-                    <p className="about__text">Для меня само собой разумеющееся, что верстальщик должен принимать дизайнерские решения если в этом есть необходимость, а не закрывать глаза на то, что некоторые элементы ненарисованы или нелогичны;</p>
-                    <p className="about__text">Интерфейс должен хорошо выглядеть и на телефоне и на 27-и дюймовом экране.</p>*/}
                 </div>
                 <div>
                     { getSecondText(lang).map((paragraph, i) => <p className="about__text" key={i}>{paragraph}</p>) }
-                    {/*<p className="about__text">Последние 5 лет занимался фрилансом. В основном это оформление и вёрстка каталогов, магазинов написание компонентов. Но такая занятость надоела потому что приходится заниматься множеством непрофильных вещей. И дома скучно.</p>
-                    <p className="about__text">Хочу перейти на работу в офисе чтобы помочь вам в вёрстке сайтов и интерфейсов с уклоном в JavaScript, React и сопутствующие современные технологии.</p>
-                    <p className="about__text">React изучил в прошлом году и в свободное время пишу на нём свой проект.</p>
-                    <p className="about__text">31 год. Живу в Москве. Холост. Детей нет.</p>*/}
                 </div>
             </section>
         </article>

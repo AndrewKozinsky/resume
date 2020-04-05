@@ -1,0 +1,46 @@
+.work {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: var(--text-color);
+    overflow: hidden;
+    min-height: 106px;
+
+    transition: box-shadow .5s;
+    border: none;
+    border-radius: var(--radius-2);
+    background-color: white;
+    padding: 1.7rem 100px 1.7rem 2rem;
+
+    &:hover {
+        color: var(--text-color);
+        border: none;
+    }
+}
+.work:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.work__image {
+    position: absolute;
+    top: 50%;
+    right: -70px;
+    margin-top: -72px;
+}
+
+.work__header {
+    position: relative;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+
+    margin-bottom: .6rem;
+}
+
+.work__text {
+    position: relative;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-120.000000, -1959.000000)">
+            <g id="Group-22" transform="translate(120.000000, 1959.000000)">
+                <path d="M19,0 C20.1045695,0 21,0.8954305 21,2 L21,19 C21,20.1045695 20.1045695,21 19,21 L2,21 C0.8954305,21 0,20.1045695 0,19 L0,2 C0,0.8954305 0.8954305,0 2,0 L19,0 Z M19,5 L2,5 L2,19 L19,19 L19,5 Z M19,2 L2,2 L2,4 L19,4 L19,2 Z" id="Combined-Shape" fill="#1E1E1E" fill-rule="nonzero"></path>
+                <rect id="Rectangle-Copy-31" fill="#1E1E1E" x="10" y="15" width="7" height="2"></rect>
+                <polyline id="Path-2" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 8 9 11.5 5 15"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,86 @@
+// Терминал и Гит
+.a-tools-1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.a-tools-1__text {
+    display: inline-block;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+
+    padding-left: 27px;
+    margin-right: 2.2rem;
+}
+
+.a-tools-1--terminal {
+    background-image: url("./icons/terminal.svg");
+}
+.a-tools-1--git {
+    background-image: url("./icons/git.svg");
+}
+
+@media (min-width: 700px) {
+    .a-tools-1 {
+        margin-top: 4rem;
+    }
+}
+
+
+// Язык
+.a-tools-2 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+// Программы
+.a-tools-3 {
+    font-weight: 500;
+}
+
+.a-tools-3__prgm-left {
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+.a-tools-3__prgm-right {
+
+}
+.a-tools-3__prgm-right-item {
+    position: relative;
+    padding-right: 3rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 11px;
+        width: 5px;
+        height: 5px;
+        border: 2px solid var(--text-color);
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 450px) {
+    .a-tools-3__prgm-left, .a-tools-3__prgm-right {
+        display: inline-block;
+    }
+
+    .a-tools-3__prgm-left {
+        margin-bottom: 0;
+    }
+
+    .a-tools-3__prgm-right-item {
+        position: relative;
+        padding-left: 3rem;
+        padding-right: 0;
+
+        &:before {
+            left: 10px;
+        }
+    }
+}

@@ -6,6 +6,8 @@
             "tools"
             "works"
             "github";
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
 }
 
 .dev-info-grid__tools {
@@ -16,6 +18,27 @@
 }
 .dev-info-grid__github {
     grid-area: github;
+}
+
+@media (min-width: 500px) {
+    .dev-info-grid {
+        grid-row-gap: 6rem;
+    }
+}
+
+@media (min-width: 630px) {
+    .dev-info-grid {
+        grid-template-areas:
+                "tools tools"
+                "works github";
+        grid-row-gap: 4rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .dev-info-grid {
+        grid-row-gap: 8rem;
+    }
 }
 
 @media (min-width: 1000px) {
