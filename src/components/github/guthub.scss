@@ -1,0 +1,62 @@
+
+.gh-links {
+    margin-bottom: 3rem;
+}
+
+.gh-link__wrapper {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    background-image: url('data:image/svg+xml;utf8,<svg width="12px" height="16px" viewBox="0 0 12 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M1,0 L11,0 C11.5522847,0 12,0.44771525 12,1 L12,13 C12,13.5522847 11.5522847,14 11,14 L1,14 C0.44771525,14 0,13.5522847 0,13 L0,1 C0,0.44771525 0.44771525,0 1,0 Z" id="Path" fill="rgb(255, 255, 255)" fill-rule="nonzero"></path><path d="M11,0 C11.5522847,0 12,0.44771525 12,1 L12,13 C12,13.5522847 11.5522847,14 11,14 L6,14 L6,16 L4.5,14.5 L3,16 L3,14 L1,14 C0.44771525,14 0,13.5522847 0,13 L0,1 C0,0.44771525 0.44771525,0 1,0 L11,0 Z M11,11 L1,11 L1,13 L3,13 L3,12 L6,12 L6,13 L11,13 L11,11 Z M11,1 L2,1 L2,10 L11,10 L11,1 Z" fill="rgb(107, 115, 126)" fill-rule="nonzero"></path><rect fill="rgb(107, 115, 126)" x="3" y="2" width="1" height="1"></rect><rect fill="rgb(107, 115, 126)" x="3" y="4" width="1" height="1"></rect><rect fill="rgb(107, 115, 126)" x="3" y="6" width="1" height="1"></rect><rect fill="rgb(107, 115, 126)" x="3" y="8" width="1" height="1"></rect></svg>');
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 18px;
+    margin-bottom: 1.6rem;
+}
+
+.gh-link__link {
+    margin-right: 2px;
+}
+
+.gh-link__sticker {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    background-color: rgb(255, 255, 255);
+
+    padding: 1px 7px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+    .gh-links {
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+.test-task-text {
+    font-weight: 500;
+    color: rgb(100, 173, 51);
+
+    background-image: url('data:image/svg+xml;utf8,<svg width="23px" height="20px" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20,10 C20,15.5227848 15.5227848,20 10,20 C4.66708861,20 0.308860759,15.8253165 0.0164556962,10.5658228 C0.00506329114,10.378481 0,10.1898734 0,10 C0,4.47721519 4.47721519,0 10,0 C10.7620253,0 11.5025316,0.0848101266 12.2151899,0.246835443 C16.6721519,1.25443038 20,5.23797468 20,10" fill="rgb(100, 173, 51)"></path><path d="M12.2151899,0.246860759 C12.1949367,0.249392405 12.1734177,0.251924051 12.1518987,0.253189873 C9.24050633,0.50635443 5.44303797,2.78483544 4.30379747,6.07597468 C3.17088608,9.34939241 1.03544304,10.3696456 0.0164556962,10.5658481 C0.00506329114,10.3785063 0,10.1898987 0,10.0000253 C0,4.47724051 4.47721519,2.53164557e-05 10,2.53164557e-05 C10.7620253,2.53164557e-05 11.5025316,0.084835443 12.2151899,0.246860759" fill="rgb(51, 51, 51)"></path><path d="M19.9772532,10.664557 C19.992443,10.4443038 20.000038,10.2227848 20.000038,10 C20.000038,5.23797468 16.6721899,1.25443038 12.2152278,0.246835443 C11.8025696,0.153164557 11.3797848,0.0848101266 10.9494051,0.0455696203 C20.2506709,-0.289873418 22.4051013,5.94936709 22.5316835,7.97468354 C22.6391519,9.69367089 21.0126962,10.4101266 19.9772532,10.664557" fill="rgb(47, 94, 0)"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+
+    padding-left: 30px;
+    margin-bottom: 2rem;
+}
+
+
+.salary-text__text {
+
+}
+
+.salary-text__big-text {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+}
+.salary-text__big-text--selected {
+    font-weight: 700;
+}

@@ -19,11 +19,9 @@ function Works() {
 
     const worksData = getWorksData(lang);
 
-    const worksMarkup = worksData.map((workData, i) => {
+    return worksData.map((workData, i) => {
         return Work(workData, i)
     });
-
-    return worksMarkup
 }
 
 export default Radium(Works);
@@ -41,7 +39,6 @@ function Work(data, i) {
 
 
 function getCardStyle(color) {
-    console.log(color);
     return {
         ':hover': {
             'boxShadow': `0 0 2px rgb(${color}, .15), 0 1px 10px rgb(${color}, .3)`

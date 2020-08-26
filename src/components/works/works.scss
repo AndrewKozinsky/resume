@@ -2,17 +2,18 @@
     position: relative;
     display: block;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.2rem;
     font-weight: 300;
     color: var(--text-color);
     overflow: hidden;
-    min-height: 106px;
+    width: 100%;
+    box-sizing: border-box;
 
     transition: box-shadow .5s;
     border: none;
     border-radius: var(--radius-2);
     background-color: white;
-    padding: 1.7rem 100px 1.7rem 2rem;
+    padding: 1rem 1.4rem 1.2rem 1.4rem;
 
     &:hover {
         color: var(--text-color);
@@ -24,6 +25,7 @@
 }
 
 .work__image {
+    display: none;
     position: absolute;
     top: 50%;
     right: -70px;
@@ -43,4 +45,42 @@
 
 .work__text {
     position: relative;
+}
+
+@media (min-width: 380px) {
+    .work__image {
+        display: block;
+    }
+    .work {
+        min-height: 140px;
+        padding: 1.7rem 105px 1.7rem 2rem;
+    }
+}
+
+@media (min-width: 630px) {
+    .work__image {
+        display: none;
+    }
+    .work {
+        min-height: 140px;
+        padding: 1.7rem 2rem 1.7rem 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .work__image {
+        display: block;
+    }
+    .work {
+        padding-right: 105px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .work__image {
+        right: -40px;
+    }
+    .work {
+        padding-right: 135px;
+    }
 }

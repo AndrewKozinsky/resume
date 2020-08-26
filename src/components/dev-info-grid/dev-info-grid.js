@@ -3,6 +3,7 @@ import './dev-info-grid.scss'
 import {useSelector} from "react-redux";
 import Tools from '../tools'
 import Works from '../works'
+import Github from '../github'
 
 
 function DevInfoGrid() {
@@ -22,6 +23,7 @@ function DevInfoGrid() {
             </section>
             <section className="dev-info-grid__github">
                 <h2 className="header__2">{ lang === 'ru' ? 'Код на GitHub' : 'Sources on GitHub' }</h2>
+                <Github />
             </section>
         </div>
     )

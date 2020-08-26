@@ -48,7 +48,10 @@ function Tool(data, i, experience, level) {
         return <span className="tool__subtool" key={j}>{subToolName}</span>
     });
 
-    const sign = <img src={data.sign} className="tool__sign" />;
+    let sign = null;
+    if(data.sign) {
+        sign = <img src={data.sign} className="tool__sign" alt={data.name} />;
+    }
 
     return <div className="tool" key={i}>
         <h3 className="tool__name">{data.name}{sign}</h3>
